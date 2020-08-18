@@ -5,5 +5,6 @@
     snap: 
       name: code
       classic: yes
-  - name: install python-related packages
-    apt: name=['python3-pip', 'pipenv']
+  - name: install packages
+    apt: 
+      name: ['python3-pip', 'pipenv']
