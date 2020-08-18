@@ -5,6 +5,16 @@
     snap: 
       name: code
       classic: yes
+  - name: Run the equivalent of "apt-get update" as a separate step
+    apt:
+      update_cache: yes
   - name: install python-related packages
     apt: 
       name: ['python3-pip', 'pipenv']
+  - name: Upgrade all packages to the latest version
+    apt:
+      name: "*"
+      state: latest
+  - name: Update all packages to the latest version
+    apt:
+      upgrade: dist
