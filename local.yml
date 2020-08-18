@@ -17,7 +17,7 @@
       update_cache: yes
   - name: Install apt packages
     apt: 
-      name: ['awscli', 'nautilus-dropbox' 'pipenv', python3-pip]
+      name: ['awscli', 'nautilus-dropbox', 'pipenv', python3-pip]
   - name: Upgrade all packages to the latest version
     apt:
       name: "*"
