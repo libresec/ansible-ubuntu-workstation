@@ -5,3 +5,7 @@
     snap: 
       name: code
       classic: yes
+  - name: install packages
+    apt: name={{item}}
+    with_items:
+      - python3-pip
