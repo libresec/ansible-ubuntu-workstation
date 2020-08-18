@@ -8,6 +8,9 @@
   - name: Install postman snap
     snap:
       name: postman
+  - name: Install twilio-authy snap
+    snap:
+      name: authy
   - name: Run the equivalent of "apt-get update" as a separate step
     apt:
       update_cache: yes
