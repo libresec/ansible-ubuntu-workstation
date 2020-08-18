@@ -12,6 +12,9 @@
     snap:
       name: authy
       channel: beta
+  - name: Install spotify
+    snap: 
+      name: spotify
   - name: Run the equivalent of "apt-get update" as a separate step
     apt:
       update_cache: yes
