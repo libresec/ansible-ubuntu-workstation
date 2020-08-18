@@ -1,5 +1,5 @@
--hosts: localhost
- become: true
- tasks:
+- hosts: localhost
+  become: true
+  tasks:
   - name: install vscode
   - snap: name = code --classic
