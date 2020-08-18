@@ -1,14 +1,17 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: install vscode snap with option --classic
+  - name: Install vscode snap with option --classic
     snap: 
       name: code
       classic: yes
+  - name: Install postman snap
+    snap:
+      name: postman
   - name: Run the equivalent of "apt-get update" as a separate step
     apt:
       update_cache: yes
-  - name: install python-related packages
+  - name: Install python-related packages
     apt: 
       name: ['python3-pip', 'pipenv']
   - name: Upgrade all packages to the latest version
